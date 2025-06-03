@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Christ living Ministries International Church official Website: Powered By; DigCizen - CyberBiz Clinic_Sulaiman Ndamisa</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons-->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Oct 28 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: url('assets/img/background.jpg') no-repeat center center/cover;
+        color: #fff;
+    }
+
+    /* Section Styling */
+    .sermons {
+        text-align: center;
+        padding: 80px 0;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Sermon Grid */
+    .sermons-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    /* Sermon Card with Glass Effect */
+    .sermon-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        transition: 0.3s ease-in-out;
+    }
+
+    .sermon-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    }
+
+    .sermon-thumbnail img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .sermon-thumbnail img:hover {
+        opacity: 0.8;
+    }
+
+    .sermon-content h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        color: #1f31f6;
+    }
+
+    .sermon-content p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+        color: #666;
+    }
+
+    .sermon-content i {
+        margin-right: 8px;
+        color: #1f31f6;
+    }
+
+    /* Call-to-Action Button */
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        margin-top: 10px;
+        background: #1f31f6;
+        color: #222;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #1f31f6;
+    }
+
+     /* Events grid */
+     .events-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+  
+      @media (min-width: 768px) {
+        .events-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+  
+      @media (min-width: 1024px) {
+        .events-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+  
+      /* Event card styles */
+      .event-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 1rem;
+        transition: all 0.1s ease;
+      }
+  
+      .event-card-inner {
+        position: relative;
+        height: 100%;
+        padding: 1.5rem;
+        backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 1rem;
+        transition: all 0.1s ease;
+        z-index: 10;
+      }
+  
+      .event-card:hover .event-card-inner {
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(16px);
+      }
+  
+      .event-card-blob {
+        position: absolute;
+        top: -2.5rem;
+        right: -2.5rem;
+        width: 10rem;
+        height: 10rem;
+        background-color: #1f31f6;
+        border-radius: 50%;
+        filter: blur(24px);
+        transition: all 0.1s ease;
+      }
+  
+      .event-card:hover .event-card-blob {
+        background-color: #1f31f6;
+      }
+  
+      /* Icon container */
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+  
+      .icon-wrapper {
+        padding: 0.75rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+      }
+  
+      .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        color: #1f31f6;
+      }
+  
+      /* Event content */
+      .event-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        transition: color 0.1s ease;
+      }
+  
+      .event-card:hover .event-title {
+        color: #1f31f6;
+      }
+  
+      .event-details {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+  
+      .event-detail {
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+      }
+  
+      .detail-icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.5rem;
+        color: #1f31f6;
+      }
+  
+      .event-description {
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        color: #64748b;
+      }
+  
+      /* Button styles */
+      .button-container {
+        margin-top: 1.5rem;
+      }
+  
+      .register-button {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: #1f31f6;
+        font-weight: 500;
+        transition: all 0.1s ease;
+        cursor: pointer;
+      }
+  
+      .register-button:hover {
+        background-color: #1f31f6;
+        color: white;
+        border-color: #1f31f6;
+      }
+  </style>
+</head>  
+
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="CLMIC">
+        <h1 class="sitename" style="color: #1f31f6;">Christ Living Ministries International Church</h1>
+      </a>
+  
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ministries.html">Ministries</a></li>
+          <li><a href="sermons.html" class="active">Sermons &amp; Events</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+  
+    </div>
+  </header>
+  <main class="main" style="margin-top: 60px;">
+    <!-- Sermons Section -->
+    <section id="sermons" class="sermons" style="margin-top: 0.5rem;">
+      <div class="section-title text-center mb-5">
+        <h1 style="font-weight: 600; color: #1f31f6;">Sermons &amp; Events</h1>
+        <h4 style="color: #555; font-weight: 200; margin-top: 1.5rem; margin-bottom: -5rem;">Transforming lives through faith, compassion, and empowerment.</h4>
+      </div>
+      <h2 style="font-weight: 600; color: #1f31f6;">Sermons</h2>
+        <div class="sermons-container" style="margin-top: -2rem;">
+          <!-- Sermon 1 -->
+          <div class="sermon-card">
+              <div class="sermon-thumbnail">
+                  <img src="assets/img/Sermons/Dad.jpeg" alt="Sermon 1">
+              </div>
+              <div class="sermon-content">
+                  <h3>Faith that Moves Mountains</h3>
+                  <p><i class="fas fa-user"></i> Pastor Joseph Nabieu</p>
+                  <p><i class="fas fa-calendar-alt"></i> March 24, 2025</p>
+                  <p><i class="fas fa-tags"></i> Faith, Strength</p>
+                  <div class="buttons">
+                    <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                      <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                    </a>
+                 </div>
+              </div>
+          </div>
+
+          <!-- Sermon 2 -->
+          <div class="sermon-card">
+              <div class="sermon-thumbnail">
+                <img src="assets/img/Sermons/Mum Worshipping.jpeg" alt="Sermon 2">
+              </div>
+              <div class="sermon-content">
+                  <h3>The Power of Prayer</h3>
+                  <p><i class="fas fa-user"></i> Mrs Nabieu (Pastress)</p>
+                  <p><i class="fas fa-calendar-alt"></i>Date of Sermon</p>
+                  <p><i class="fas fa-tags"></i> Prayer, Healing</p>
+                  <div class="buttons">
+                    <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                      <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                    </a>
+                 </div>
+              </div>
+          </div>
+
+          <!-- Sermon 3 -->
+          <div class="sermon-card">
+            <div class="sermon-thumbnail">
+              <img src="assets/img/Sermons/Rev.jpeg" alt="Sermon 3">
+            </div>
+            <div class="sermon-content">
+              <h3>Unlocking the Power of Prayer</h3>
+              <p><i class="fas fa-user"></i> Name and Title</p>
+              <p><i class="fas fa-calendar-alt"></i> March 10, 2025</p>
+              <p><i class="fas fa-tags"></i> Prayer, Breakthrough</p>
+              <div class="buttons">
+                <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                  <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sermon 4 -->
+          <div class="sermon-card">
+            <div class="sermon-thumbnail">
+              <img src="assets/img/Sermons/readymade0.jpeg" alt="Sermon 4">
+            </div>
+            <div class="sermon-content">
+              <h3>Embracing God's Purpose</h3>
+              <p><i class="fas fa-user"></i> Name and Title</p>
+              <p><i class="fas fa-calendar-alt"></i> March 10, 2025</p>
+              <p><i class="fas fa-tags"></i> Purpose, Destiny</p>
+              <div class="buttons">
+                <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                  <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sermon 5 -->
+          <div class="sermon-card">
+            <div class="sermon-thumbnail">
+              <img src="assets/img/Sermons/readymade.jpg" alt="Sermon 5">
+            </div>
+            <div class="sermon-content">
+              <h3>The Power of Unshakable Faith</h3>
+              <p><i class="fas fa-user"></i> Name and Title</p>
+              <p><i class="fas fa-calendar-alt"></i> March 10, 2025</p>
+              <p><i class="fas fa-tags"></i> Faith, Strength</p>
+              <div class="buttons">
+                <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                  <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sermon 6 -->
+          <div class="sermon-card">
+            <div class="sermon-thumbnail">
+              <img src="assets/img/Sermons/readymade0.jpeg" alt="Sermon 6">
+            </div>
+            <div class="sermon-content">
+              <h3>Living a Life of Gratitude</h3>
+              <p><i class="fas fa-user"></i> Name and Title</p>
+              <p><i class="fas fa-calendar-alt"></i> March 10, 2025</p>
+              <p><i class="fas fa-tags"></i> Thanksgiving, Joy</p>
+              <div class="buttons">
+                <a href="https://youtu.be/d5TPCd6Tah4?si=lWkOPr9tXi3UplGD" class="glightbox btn-watch-video d-flex align-items-center">
+                  <i class="bi bi-play-circle"></i><span><strong><em style="color: #1f31f6;">Watch Now</em></strong></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section style="margin-top: -5rem;">
+      <div class="container">
+        <div class="section-title text-center mb-5">
+          <h2 style="font-weight: 600; color: #1f31f6;">Events</h2>
+          <h4 style="color: #555; font-weight: 200; margin-top: 1.5rem; margin-bottom: -2rem;">Transforming lives through faith, compassion, and empowerment.</h4>
+        </div>
+        <!-- Events grid -->
+        <div class="events-grid">
+         <!-- Event 1 -->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Weekly Services</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Every Tuesday, Wednesday, Friday & Sunday</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>6:00 PM (Tues, Wed, Fri) | 9:30 AM (Sunday)</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>All Branches</span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                Join us for our Weekly Services, where we gather to receive divine guidance, anointing, deliverance, and deep fellowship.  
+                <br><strong>Tuesday:</strong> Bible Studies  
+                <br><strong>Wednesday:</strong> Anointing Service  
+                <br><strong>Friday:</strong> Deliverance Service  
+                <br><strong>Sunday:</strong> Divine Service  
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Join Us</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event  2-->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Prayer Rain</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>14th-16th Every Month</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Full Time - 3 Days Complete</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Central Church</span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                Join us for the Prayer Rain, a 3-day spiritual encounter held from the 14th to the 16th of every month at the Central Church. This full-time prayer event is dedicated to seeking God's face for breakthroughs, healing, and divine direction. Come and be part of a transformative experience.
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Join the Prayer Rain</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Community Outreach & Charity Drive</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 5-7, 2025</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>10:00 AM - 03:00 PM</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Freetown City</span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                Extending the love of Christ to the less privileged through food distribution, medical aid, and 
+            skill-building workshops. Be part of a movement that brings hope, healing, and tangible support 
+            to those in need. Together, we can make a difference!
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Get Involved</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Event 4 -->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="23"></line>
+                    <line x1="8" y1="23" x2="16" y2="23"></line>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Youth Revival & Worship Night</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>July 22, 2025</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>07:00 PM - 10:00 PM</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Freetown City<y/span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                A night of radical worship, divine impartation, and prophetic encounters for the next generation. 
+            Young believers will be ignited to live boldly for Christ, walk in their purpose, and build a strong 
+            community of faith-driven leaders.
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Join the Movement</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Event 5 -->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Bible Mastery Bootcamp</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>August 5-7, 2025</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>10:00 AM - 03:00 PM</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Church Compound</span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                A 10-day deep dive into the Word of God, designed to strengthen biblical understanding, doctrine, 
+            and spiritual application. This bootcamp will provide in-depth scriptural insights, theological 
+            teachings, and hands-on training in ministry and evangelism.
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Register Today</button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Event 6 -->
+          <div class="event-card">
+            <div class="event-card-inner">
+              <div class="event-card-blob"></div>
+              <div class="icon-container">
+                <div class="icon-wrapper">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="event-title">Holy Spirit Encounter & Anointing Service</h3>
+              
+              <div class="event-details">
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>September 18, 2025</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>6:00 PM - 8:00 PM</span>
+                </div>
+                
+                <div class="event-detail">
+                  <svg class="detail-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Revival Grounds, Freetown City</span>
+                </div>
+              </div>
+              
+              <p class="event-description">
+                A sacred gathering dedicated to experiencing the presence and power of the Holy Spirit. 
+            Join us for an evening of prophetic worship, deep intercession, and anointing for a fresh outpouring. 
+            Expect healing, deliverance, and divine impartation as we surrender to God’s move.
+              </p>
+              
+              <div class="button-container">
+                <button class="register-button">Be Part of the Encounter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-light py-5">
+
+    <!-- Top Section: Footer Content -->
+    <div class="container footer-top">
+      <div class="row gy-4">
+        
+        <!-- Footer About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center mb-3">
+            <span class="sitename">Christ Living Ministries International Church - CLMIC</span>
+          </a>
+          <div class="footer-contact pt-2">
+            <p>15c Wilberforce Loop</p>
+            <p>Pipe Line, Freetown - Sierra Leone</p>
+            <p class="mt-3"><strong>Phone:</strong> +232 78-075-067</p>
+            <p class="mt-3"><strong>Phone:</strong> +1 6678 254445 41</p>
+            <p><strong>Email:</strong> info.clmic@gmail.com.com</p>
+            <p><strong>Email:</strong> clmic@gmail.com</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="me-3"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#features">Mission</a></li>
+            <li><a href="#testimonials">Testimonies</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Ministries</h4>
+          <ul class="list-unstyled">
+            <li><a href="">Men's Fellowships</a></li>
+            <li><a href="">Women's Fellowships</a></li>
+            <li><a href="">Youth's Fellowships</a></li>
+            <li><a href="">Children's Fellowships</a></li>
+          </ul>
+        </div>
+
+        <!-- Placeholder Section 1 -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Foundation</h4>
+          <ul class="list-unstyled">
+            <li><a href="donate.html">Charity</a></li>
+            <li><a href="donate.html">Donation</a></li>
+            <li><a href="donate.html">For the needy</a></li>
+            <li><a href="donate.html">Offerings &amp; Tithe</a></li>
+          </ul>
+        </div>
+
+        <!-- Placeholder Section 2 -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Footabll</h4>
+          <ul class="list-unstyled">
+            <li><a href="#meet-the-team">Team</a></li>
+            <li><a href="">Welfare</a></li>
+            <li><a href="">Training &amp; Kits</a></li>
+            <li><a href="donate.html">Support</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Section: Copyright -->
+    <div class="container text-center mt-4">
+      <p>© <strong class="sitename">Christ Living Ministries International Church - CLMIC</strong> All Rights Reserved</p>
+      <div class="credits">
+        Engineered &amp; Powered by:<a href="https://cyberbizclinic.com/" target="_blank">CyberBiz Clinic - DigCizen Unit</a>
+      </div>
+      <div class="credits">
+        Engineer Lead:<a href="https://cbc-232.github.io/ceo/" target="_blank">Sulaiman Ndamisa</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
